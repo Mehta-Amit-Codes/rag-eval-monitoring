@@ -1,5 +1,7 @@
 # RAG Evaluation & Monitoring
 
+[![Diagram](https://img.shields.io/badge/gitdiagram-view%20architecture-blue)](https://gitdiagram.com/Mehta-Amit-Codes/rag-eval-monitoring)
+
 Reference implementation of the "RAG Evaluation & Monitoring in Production"
 blueprint: live sampling, LLM-as-judge scoring, threshold alerting, a
 user feedback loop into a golden regression dataset, retrieval drift
