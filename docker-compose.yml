@@ -1,0 +1,16 @@
+version: "3.9"
+
+services:
+  eval-monitoring-api:
+    build: .
+    environment:
+      GROK_API_KEY: ${GROK_API_KEY}
+      JUDGE_MODEL: grok-4
+      RAG_API_URL: http://host.docker.internal:8000
+    ports:
+      - "8002:8002"
+    volumes:
+      - eval_data:/app/data
+
+volumes:
+  eval_data:
